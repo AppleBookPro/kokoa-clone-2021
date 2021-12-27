@@ -26,12 +26,12 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-.user-component_avatar--xl {
+.user-component__avatar--xl {
   width: 80px;
   height: 80px;
 }
 
-.user-component_avatar--sm {
+.user-component__avatar--sm {
   width: 60px;
   height: 60px;
   border-radius: 25px;
