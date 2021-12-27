@@ -44,7 +44,7 @@
   color: white;
   background-color: #92a4b2;
   padding: 15px;
-  font-size: 14 px;
+  font-size: 14px;
   border-radius: 25px;
   margin-bottom: 25px;
 }
@@ -59,8 +59,9 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 10px;
 }
+
 .message__author {
   margin-bottom: 5px;
   display: block;
@@ -79,6 +80,7 @@
   border-top-left-radius: 0px;
   margin-right: 5px;
 }
+
 .message__time,
 .message__author {
   opacity: 0.8;
@@ -132,7 +134,7 @@
   border: var(--main-border);
   border-radius: 25px;
   box-sizing: border-box;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply__column:last-child > i,
@@ -150,8 +152,8 @@
 .reply__column button {
   background-color: var(--yellow);
   border: none;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 

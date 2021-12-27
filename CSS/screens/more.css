@@ -1,40 +1,54 @@
-.more-screen .icon-row {
-  margin-top: 35px;
+#friends-display-link {
+  text-align: center;
+  display: block;
+  background-color: #fafafa;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  margin-top: -15px;
 }
 
-.more-suggestions {
-  margin-top: 50px;
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+.friends-screen__channel {
+  margin-top: 25px;
   border-top: var(--main-border);
-  padding-top: 40px;
+  padding-top: 15px;
 }
 
-.more-suggestions__title {
+.friends-screen__channel-header {
   margin-bottom: 30px;
-}
-
-.more-suggestions__icons {
   display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
 }
 
-.more-suggestions__icon {
-  margin-right: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
-.more-suggestions__icon-image {
-  width: 60px;
-  height: 60px;
+#splash-screen {
   background-color: var(--yellow);
-  border-radius: 10px;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
-}
-
-.more-suggestions__icon-image i {
-  font-size: 32px;
-  color: white;
+  font-size: 132px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
 }
